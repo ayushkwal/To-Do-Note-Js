@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-color:rgba(235, 38, 38, 0.09);
+    }
+    .card-body{
+        color:rgba(121, 7, 121,4);
+        background-color:rgba(218, 20, 218, 0.09);
+        border:1px solid purple;
+        border-radius: 20px;
+        box-shadow: 5px 10px 20px rgb(199, 68, 45);
+    }
+</style>
+<body>
+
+    <nav class="navbar navbar-expand">
+        <hr>
+        <a class="" href="#">To-Do-Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-info" id = "searchbox" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container ">
+        <h1 class = "display-4"><strong>To-Do-Note</strong></h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title display-7">Add a Title</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTitle" rows="3"></textarea>
+                </div>
+                <h5 class="">Add a Note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                
+                <a href ="#" class="btn btn-info" id="addBtn">Add Note</a>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container"> </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
